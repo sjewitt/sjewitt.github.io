@@ -1,0 +1,54 @@
+<html>
+<title>MIJE</title>
+<head>
+<meta name="keywords" content="{CMS_KEYWORDS}">
+<meta name="description" content="{CMS_DESCRIPTION}">
+<meta name="author" content="{CMS_AUTHOR}">
+<script type="text/javascript" language="javascript" src="/script/mije.js"></script>
+<script type="text/javascript" src="/script/edit.js"></script>
+<link rel="stylesheet" href="/styles/mije.css" type=text/css>
+<script type="text/javascript">
+//dynamically generated array for javascript nav:
+{CMS_JSNAVARRAY}
+</script>
+</head>
+<body>
+<div class="logo">
+  <a href="/"><img src="/weddingfest07/images/mije_logo_small_noborder.gif" border="0" alt="Web design and build"></a>
+</div>
+<div class="banner">
+  <p>{CMS_EDITLINK}
+</div>
+<div class="search">
+  <form name="search" method="get" action="/search.pl">
+    <input type="text" name="qt" value="{CMS_QT}" style="width:93px;border:1px solid black;position:relative;top:-5px;">
+    <input type="image" src="/weddingfest07/images/search.gif" value="go">
+  </form>
+</div>
+<div class="lhnav">
+  <script language="javascript">
+    document.write(getLHNav("{CMS_CURRFILE}"));
+  </script>
+</div>
+
+<div class="content">
+{CMS_CONTENT1}
+<p>
+<strong>Free Text:</strong><br />
+{CMS_CONTENT2}
+</p>
+
+<p>
+<strong>Text Label:</strong><br />
+{CMS_CONTENT3}
+</p>
+
+<p>
+<strong>Image Select:</strong><br />
+{CMS_CONTENT4}
+</p>
+
+</div>
+
+</body>
+</html>

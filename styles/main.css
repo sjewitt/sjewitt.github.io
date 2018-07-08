@@ -1,0 +1,103 @@
+body {
+	color: #BB2B87;
+	background-color: black;
+	background-position: 0px 0px;
+	background-repeat: repeat-y;
+	width: 600px;
+	font-family: arial,sans serif;
+}
+body.home {
+	background-image: url("/weddingfest07/images/structure/celtic1.gif");
+	margin-left: 320px;
+}
+body.content {
+	margin-left: 80px;
+	background-image: url("/weddingfest07/images/structure/celtic2.gif");
+}
+.home h1 {
+	font-size: 1.8em;
+}
+.content h1 {
+	font-size: 1.4em;
+	margin-top: 50px;
+}
+.home h2 {
+	font-size: 1.4em;
+	margin-top: 50px;
+}
+.content h2 {
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+.content h3 {
+	font-size: 1.0em;
+	margin-top: 10px;
+}
+p {
+	width: 600px;
+	margin-left:50px;
+}
+.thumbs p{
+	width: 600px;
+}
+img {
+	border: 1px solid #BB2B87;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #BB2B87;
+}
+.coloredlink {
+	color: #BB2B87;
+}
+ul.nav
+{
+    text-align:right;
+}
+li.nav {
+	display: inline;
+	list-style-type: none;
+	padding-left: 35px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	font-family: verdana, arial, "sans serif";
+	background-image: url("/weddingfest07/images/structure/celtic_small.gif");
+	background-position: left;
+	background-repeat: no-repeat;
+}
+li.hilite {
+	height: 100px;
+	display: inline;
+	list-style-type: none;
+	padding-left: 35px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	font-family: verdana, arial, "sans serif";
+	background-image: url("/weddingfest07/images/structure/celtic_small_purple.gif");
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.inlineimages {
+    margin-left:50px;
+	display: block;
+	height: 233px;
+}
+.inlineimage {
+	float: left;
+	text-align: center;
+	width: 260px;
+	height: 230px;
+}
+.navbullet
+{
+    border:0px;
+    vertical-align:middle;
+    margin-right:5px;
+}

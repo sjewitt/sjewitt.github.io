@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <!--#include virtual="include/header_common.inc" -->
+    <!--#include virtual="include/header_thanks.inc" -->
+  </head>
+  
+    <body class="content">
+<!--#include virtual="include/body_common.inc" -->       
+
+    <h1>Thank you</h1>
+    <p>
+        We would like to thank everyone who helped out with our wedding. This includes all our
+        friends and family who helped run around in the rain, the various suppliers and the people 
+        who were just there at the right time...
+    </p>
+    <p>
+        The weekend we held our wedding was the same time that the whole country came to a standstill 
+        because of floods, so we are particularly grateful that everyone made a huge effort to turn
+        up and do their stuff...
+    </p>
+    
+    <h2>
+        Witout whom etc...
+    </h2>
+    <h3><a href="http://www.bimbleinn.com" target="_blank" title="The Bimble Inn">The Bimble Inn</a></h3>
+    <p>What can we say... The whole thing couldn&#39;t have happened without these guys. They were 
+    absolutely brilliant and made our whole concept happen just as we imagined it would</p>
+    <div class="inlineimages">
+            <img src="/weddingfest07/images/bimble1.jpg" alt="The Bimble Inn" />
+            <img src="/weddingfest07/images/bimble2.jpg" alt="The Bimble Inn" />
+    </div>
+    <p>We would also like to thank Robert Goodden for the use of the fantastic location that the Inn was
+    set up in. Again, it helped to make the day as good as we imagined.</p>
+    <p>Visit the Bimble Inn at <a href="http://www.bimbleinn.com" target="_blank" title="The Bimble Inn">www.bimbleinn.com</a></p>
+    
+    <h3>Joe the blacksmith</h3>
+    <p>We also couldn&#39;t have done it without Joe. He made the ceremony work better than we ever expected.</p>
+    <p>He made our vision of the ceremony we wanted a reality. Everyone loved him!</p>
+    <div class="inlineimages">
+            <img src="/weddingfest07/images/joe1.jpg" alt="Joe" />
+            <img src="/weddingfest07/images/joe2.jpg" alt="Joe" />
+    </div>
+    <p>
+        You can see more of Joe&#39;s work at his website: <a href="http://www.ironscribe.co.uk/" title="Joe Butler" target="_blank">
+        www.ironscribe.co.uk/</a>.
+    </p>
+    
+    <h3><a href="http://www.superspreadscatering.com/" title="SuperSpreads Catering" target="_blank">SuperSpreads</a></h3>
+    <p>
+    No event can go smoothly without food. SuperSpreads provided exactly what we needed despite the 
+    not-so-good weather and the fact that we were in the middle of a field...Huge thanks to Celia and her crew...
+    </p>
+    <p>
+        Visit their website at <a href="http://www.superspreadscatering.com/" title="SuperSpreads Catering" target="_blank">www.superspreadscatering.com</a>
+    </p>
+    
+    <h3><a href="http://www.theconmitments.co.uk" target="_blank" title="The Conmitments">The Conmitments</a></h3>
+    <p>We didn&#39;t want a full-on metal band despite our main tastes ;-) We thought also that a crappy &#39;80s disco with 
+    Aga-Doo was also not right...</p>
+    <p>We arranged for these guys to play and they agreed. Everyone thought they were brilliant, and they were perfect for us. Thanks guys.</p>
+
+    
+    <p>
+    <img src="/weddingfest07/images/conmitments.jpg" alt="The Comnitments" />
+    </p>
+    <p>
+        Visit the conmitments at <a href="http://www.theconmitments.co.uk" target="_blank" title="The Conmitments">www.theconmitments.co.uk</a>.
+    </p>
+    
+    <h3><a href="http://www.wessexmarquees.com/" title="Wessex Marquees" target="_blank">Wessex Marquees</a></h3>
+    <p>We first looked at the site in April - remember it was like Summer? The idea of needing a backup marquee
+    for eating in seemed a bit silly...</p>
+    <p>
+        As it turned out, it was an essential item to have. The guys were very professional and again provided
+        exactly what we needed. Everyone was dry when we ate... 
+    </p>
+    <p>
+        Find out more at <a href="http://www.wessexmarquees.com" target="_blank" title="Wessex Marquees">www.wessexmarquees.com</a>.
+    </p>  
+    
+    <h3><a href="http://www.thegrangeatoborne.co.uk/" title="The Grange" target="_blank">The Grange at Oborne</a></h3>
+    <p>A special thanks to The Grange for putting up with the family, and providing us with a 
+    fantastic meal the night before.</p>
+    <p>
+        For more information visit the website: <a href="http://www.thegrangeatoborne.co.uk/" title="The Grange" target="_blank">The Grange at Oborne</a>.
+    </p>
+      
+    <h3>Yeovil Plant Hire</h3>
+    <p>
+        Huge thanks to these guys for supplying a portaloo at short notice.
+    </p>
+    <p>
+        A little tip if you are planning something like this - make sure your suppliers REALLY understand
+        that you want stuff on a field...
+    </p>
+
+    <h3>Boris</h3>
+    <p>We would also like to thank Boris the farmer. He helped us (or rather people stuck inn the mud) out
+    with his tractor. This was unexpected and we are very grateful.</p>
+
+    <h3>Uncle Keith</h3>
+    <p>Similarly we would like to thank Keith for spending the ENTIRE evening ferrying various people around 
+    in his landie and getting his best clothes covered in mud!</p>
+    <p>
+        <img src="/weddingfest07/images/landie1.jpg" alt="Keith&#39;s Landrover" />
+    </p>
+    <!--#include virtual="include/footer.inc" -->
+</html>

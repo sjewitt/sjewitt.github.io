@@ -1,0 +1,31 @@
+/* CSS Document */
+body
+{
+    color:#BB2B87;
+    background:black;
+    font-family:arial,"sans serif";
+}
+img
+{
+    border:1px solid #BB2B87;
+}
+
+h1
+{
+    font-size:1.8em;
+}
+p
+{
+    aligh:center;
+}
+
+a
+{
+    color:white;
+    text-decoration:none;
+}
+a:hover
+{
+    text-decoration:underline;
+    color:#BB2B87;
+}

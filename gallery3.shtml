@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <!--#include virtual="include/header_common.inc" -->
+    <!--#include virtual="include/header_gallery.inc" -->
+  </head>
+       
+    <body class="content">
+        <!--#include virtual="include/body_common.inc" --> 
+
+    <h1>
+        Honeymoon
+    </h1>
+    
+    <p>
+       We went to the West Coast of Scotland for our honeymoon. We went to Oban some years ago, and loved it,
+       so we came back...  
+    </p>
+    
+    <a name="house"></a><h2>Our house</h2>
+    <p>We had a lovely little old fishermans cottage on the shore, just south of Campbelltown. It was
+    wonderfully peaceful. We could see seals from our front door...</p>
+    <p>
+        There&#39;s also some random pictures of stuff we saw and liked.
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_HOME);
+    </script>
+
+    <h2>
+        Machrihanish Sealife observatory
+    </h2>    
+    <p>
+    Otherwise known as the shed... A fairly remote observatory for birds and sealife. We spent a good few hours here - basically 
+    taking photos of a lazing seal. You can find out more at 
+    their website at <a href="http://www.machrihanishbirds.org.uk/" title="Machrihanish Sealife observatory" target="_blank">
+    http://www.machrihanishbirds.org.uk/</a>
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_SHED);
+    </script>
+    </p>
+    
+    <h2>Kildonan Dun</h2>
+    <p>A prehistoric habitation site. Very picturesque with stunning views across to Arran. The site itself is well maintained also.
+    Check out the <a href="http://www.campbeltownonline.org.uk/saddell.html" title="Campbelltown historical attractions" target="_blank">Campbelltown website</a> for more details.</p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_FORT);
+    </script>
+    </p>
+    
+    <h2>Saddell Abbey</h2>
+    <p>The ruins of an old abbey with some interesting graves and some displayed tomb covers. See
+    <a href="http://www.campbeltownonline.org.uk/saddell.html" title="Campbelltown historical attractions" target="_blank">Campbelltown website</a> for more details
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_SADDELL);
+    </script>
+    </p>
+    
+    <h2>Carradale waterwheel</h2>
+    <p>
+        There is a goldsmith here as well.
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_WWHEEL);
+    </script>
+    </p>
+    
+    <h2>Skipness Castle</h2>
+    <p>
+        A fantastic old castle ruin. For more info see the <a href="http://www.ancient-scotland.co.uk/site.php?a=135" title="Skipness castle" target="_blank">castle website</a>.
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_SKIPNESS);
+    </script>
+    </p>
+    
+    <h2>The Seafood Cabin</h2>
+    <p>
+        Fantastic food! With ducks!
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_SFCABIN);
+    </script>
+    </p>
+    
+    <h2>Tarbert</h2>
+    <p>
+        A fishing village with a castle overlooking. Well, the earthworks of anyway...
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_TARBERT);
+    </script>
+    </p>
+    
+    <h2>Kilberry stones</h2>
+    <p>
+        Some medieval carved tomb covers.
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_KILBERRY);
+    </script>
+    </p>
+    
+    <h2>Scottish Owl Centre</h2>
+    <p>
+        Owls... Excellent handling and flying demonstration. Great 
+        views of Campbelltown as well. We just went nuts and got pictures of
+        just about all the owls they have...
+    </p>
+    <p>
+        Visit their website at <a href="http://www.scottishowlcentre.com/" title="Scottish Owl Centre" target="_blank">www.scottishowlcentre.com</a>.
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_OWL);
+    </script>
+    </p>
+    
+    <h2>Westport Beach</h2>
+    <p>
+        A surfing beach - white sand and rolling breakers.
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_WESTPORT);
+    </script>
+    </p>    
+
+    <h2>Glasgow Royal Botanical Gardens</h2>
+    <p>
+        The name says it all really... Lots of cool plants. Oh yes, and a squirrel 
+        climbing up my leg.
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_GDNS);
+    </script>
+    </p>
+
+    <h2>Other stuff</h2>
+    <p>
+        Here are some random pretty pictures. There&#39;s some landscape shots, some excellent sky shots
+        and some shots of some historical sites. We might classify these later on...
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(HM_OTHER);
+    </script>
+    </p>
+
+
+    <!--#include virtual="include/footer.inc" -->
+</html>

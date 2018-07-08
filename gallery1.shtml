@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+   <!--#include virtual="include/header_common.inc" -->
+  <!--#include virtual="include/header_gallery.inc" -->
+  </head>
+       
+    <body class="content">
+        <!--#include virtual="include/body_common.inc" -->   
+    
+        <h1>
+        Pre-wedding bits and bobs
+    </h1>
+
+    <h2>
+        Setup on the day before
+    </h2>
+    <p>
+        Some pics of the Bimble crew building the Inn, and of the location itself.
+    </p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(EVENT_SETUP_DAY1);
+    </script>
+    </p>
+    
+    <h2>
+        The wedding dinner!
+    </h2>
+    <p>Us having food and doing stupid stuff...</p>
+    <p class="thumbs">
+    <script type="text/javascript">
+    getThumbs(EVENT_DINNER);
+    </script>
+    </p>
+
+    <!--#include virtual="include/footer.inc" -->
+</html>

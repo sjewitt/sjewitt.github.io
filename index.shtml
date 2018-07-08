@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+<!--#include virtual="include/header_common.inc" -->
+<!--#include virtual="include/header_index.inc" -->
+    </head>
+    <body class="home">
+    
+<!--#include virtual="include/index_common.inc" -->   
+ 
+    <h1>
+        Weddingfest 07
+    </h1>
+    <h2>
+        Clare &amp; Silas wedding stuff!
+    </h2>
+    <p>
+        Hello people! This is our wedding site...
+    </p>
+    <ul>
+        <li><a href="concept.shtml" title="Concept">Concept</a></li>
+        <li><a href="gallery.shtml" title="Gallery">Gallery</a></li>
+        <li><a href="thanks.shtml" title="Thanks">Thanks</a></li>
+    </ul>
+    
+<!--#include virtual="include/footer.inc" -->
+
+    </body>
+</html>
