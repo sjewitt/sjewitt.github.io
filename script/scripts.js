@@ -1,7 +1,7 @@
 //config:
 var THUMBPREFIX     = "thmb_";
-var IMGPATH         = "/weddingfest07/images/gallery/";
-var THUMBPATH       = "/weddingfest07/images/gallery/thmb/";
+var IMGPATH         = "/images/gallery/";
+var THUMBPATH       = "/images/gallery/thmb/";
 
 //categories:
 var ALL_IMAGES          = -1;
@@ -835,7 +835,7 @@ function showImage(id,category)
         var width   = 680;
         var height  = 550;
         
-        var src = "/weddingfest07/popup.htm?img=" + id + "&category=" + category;
+        var src = "/popup.htm?img=" + id + "&category=" + category;
         var w = window.open(src,"gallery","left=20,top=20,width=" + width + ",height=" + height + ",toolbar=0,resizable=0")
         w.focus();
     }
@@ -904,7 +904,7 @@ function nextImage()
         params.img++;
         if(params.img >= tempArr.length)
             params.img = 0;   //this needs to be the tempArr.length value when I build it
-        out = '<a href="/weddingfest07/popup.htm?img=' + params.img + '&category=' + params.category + '" title="Next image" />Next</a>'; 
+        out = '<a href="/popup.htm?img=' + params.img + '&category=' + params.category + '" title="Next image" />Next</a>'; 
 
         document.write(out);
     }
@@ -930,7 +930,7 @@ function prevImage()
         params.img--;
         if(params.img <0)
             params.img = tempArr.length-1;
-        out = '<a href="/weddingfest07/popup.htm?img=' + params.img + '&category=' + params.category + '" title="Previous image" />Back</a>'; 
+        out = '<a href="/popup.htm?img=' + params.img + '&category=' + params.category + '" title="Previous image" />Back</a>'; 
 
         document.write(out);
     }
@@ -1051,18 +1051,18 @@ function writeTopMenu(pageurl)
         var output = "<ul class=\"nav\">";
         var output2 = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"800\"><tr>"
         var suffix = "shtml";
-        var root = "weddingfest07/";
+        var root = "/";
         var topnavarray = new Array(["index","Home"],["concept","Concept"],["gallery","Gallery"],["thanks","Thank you"]);
         for(var a=0;a<topnavarray.length;a++)
         {
             if(topnavarray[a][0] == page)
             {
-                output2 += "<td class=\"hilite\"><img src=\"/weddingfest07/images/structure/celtic_small_purple.gif\" alt=\"bullet\" class=\"navbullet\" />"+topnavarray[a][1]+"</td>";
+                output2 += "<td class=\"hilite\"><img src=\"/images/structure/celtic_small_purple.gif\" alt=\"bullet\" class=\"navbullet\" />"+topnavarray[a][1]+"</td>";
                 output += "<li class=\"hilite\">"+topnavarray[a][1]+"</li>";
             }
             else
             {
-                output2 += "<td class=\"nav\"><img src=\"/weddingfest07/images/structure/celtic_small.gif\" alt=\"bullet\" class=\"navbullet\" /><a href=\"/"+root+topnavarray[a][0]+"."+suffix+"\" title=\""+topnavarray[a][1]+"\">"+topnavarray[a][1]+"</a></td>";
+                output2 += "<td class=\"nav\"><img src=\"/images/structure/celtic_small.gif\" alt=\"bullet\" class=\"navbullet\" /><a href=\"/"+root+topnavarray[a][0]+"."+suffix+"\" title=\""+topnavarray[a][1]+"\">"+topnavarray[a][1]+"</a></td>";
                 output += "<li class=\"nav\"><a href=\"/"+root+topnavarray[a][0]+"."+suffix+"\" title=\""+topnavarray[a][1]+"\">"+topnavarray[a][1]+"</a></li>";
             }
         }
