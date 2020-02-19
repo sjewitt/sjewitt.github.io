@@ -7,7 +7,8 @@
     </head>
     <body class="home">
     
-<!--#include virtual="include/index_common.inc" -->   
+<!--#include virtual="include/index_common.inc" --> 
+{% include index_common.inc %}
  
     <h1>
         Weddingfest 07
