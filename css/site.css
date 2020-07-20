@@ -1,42 +1,45 @@
+/*
+css gradients:
+https://css-tricks.com/css3-gradients/
+*/
 body {
-	color: #BB2B87;
-	background-color: black;
-	background-position: 0px 0px;
-	background-repeat: repeat-y;
-	width: 600px;
 	font-family: arial,sans serif;
+	background-color: red;
+	background-image:
+    linear-gradient(
+      to left, 
+      red,black,black,black, red
+    );
 }
-body.home {
-	background-image: url("/weddingfest07/images/structure/celtic1.gif");
-	margin-left: 320px;
-}
-body.content {
-	margin-left: 80px;
-	background-image: url("/weddingfest07/images/structure/celtic2.gif");
-}
+
 .home h1 {
+	color: #c0c0c0;
 	font-size: 1.8em;
 }
 .content h1 {
+	color: #c0c0c0;
 	font-size: 1.4em;
 	margin-top: 50px;
 }
 .home h2 {
+	color: #c0c0c0;
 	font-size: 1.4em;
 	margin-top: 50px;
 }
 .content h2 {
+	color: #c0c0c0;
 	font-size: 1.2em;
 	margin-top: 10px;
 }
 
 .content h3 {
+	color: #c0c0c0;
 	font-size: 1.0em;
 	margin-top: 10px;
 }
 p {
-	width: 600px;
-	margin-left:50px;
+/* 	width: 600px; */
+/* 	margin-left:50px; */
 }
 .thumbs p{
 	width: 600px;
@@ -59,30 +62,23 @@ ul.nav
 {
     text-align:right;
 }
-li.nav {
-	display: inline;
-	list-style-type: none;
-	padding-left: 35px;
-	padding-top: 0px;
-	padding-bottom: 10px;
-	padding-right: 20px;
-	font-family: verdana, arial, "sans serif";
-	background-image: url("/weddingfest07/images/structure/celtic_small.gif");
-	background-position: left;
-	background-repeat: no-repeat;
+div.menubar{
+	border-bottom: 1px solid #840c0c;
 }
-li.hilite {
-	height: 100px;
+div.menubar ul{
+	width: 100%;
+	padding-inline-start: 0px;
+}
+div.menubar li {
 	display: inline;
 	list-style-type: none;
-	padding-left: 35px;
+/* 	padding-left: 35px; */
 	padding-top: 0px;
 	padding-bottom: 10px;
 	padding-right: 20px;
-	font-family: verdana, arial, "sans serif";
-	background-image: url("/weddingfest07/images/structure/celtic_small_purple.gif");
-	background-position: left;
-	background-repeat: no-repeat;
+}
+li.hilight {
+	font-weight: bold;
 }
 .inlineimages {
     margin-left:50px;
