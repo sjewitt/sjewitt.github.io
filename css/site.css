@@ -12,27 +12,19 @@ body {
     );
 }
 
-.home h1 {
+h1 {
 	color: #c0c0c0;
 	font-size: 1.8em;
 }
-.content h1 {
+
+h2 {
 	color: #c0c0c0;
 	font-size: 1.4em;
 	margin-top: 50px;
-}
-.home h2 {
-	color: #c0c0c0;
-	font-size: 1.4em;
-	margin-top: 50px;
-}
-.content h2 {
-	color: #c0c0c0;
-	font-size: 1.2em;
-	margin-top: 10px;
 }
 
-.content h3 {
+
+h3 {
 	color: #c0c0c0;
 	font-size: 1.0em;
 	margin-top: 10px;
