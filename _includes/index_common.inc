@@ -1,2 +1,0 @@
-<!-- common body stuff -->
-
