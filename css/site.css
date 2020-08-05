@@ -1,8 +1,21 @@
 /*
 css gradients:
 https://css-tricks.com/css3-gradients/
+
+also see:
+https://css-tricks.com/couple-takes-sticky-footer/
+for sticky footer
+
+or
+https://stackoverflow.com/questions/13609006/floating-footer-always-on-the-bottom-and-visible
+for fixed
 */
+html,body{
+	height: 100%;
+}
 body {
+/* 	display: flex; */
+/*   	flex-direction: column; */
 	font-family: arial,sans serif;
 	background-color: red;
 	background-image:
@@ -21,13 +34,15 @@ h2 {
 	color: #c0c0c0;
 	font-size: 1.4em;
 	margin-top: 50px;
+	text-decoration: underline;
 }
 
 
 h3 {
 	color: #c0c0c0;
 	font-size: 1.0em;
-	margin-top: 10px;
+	margin-top: 30px;
+	text-decoration: underline;
 }
 p {
 /* 	width: 600px; */
@@ -45,6 +60,9 @@ li > span{
 .thumbs p{
 	width: 600px;
 }
+div.contents{	
+/*   flex: 1 0 auto; */
+}
 div.contents img {
 	border: 1px solid black;
 	width: 100%;
@@ -52,6 +70,28 @@ div.contents img {
 
 div.contents p {
 	color: white;
+}
+div.contents ul > li {
+	list-style-type: none;
+}
+div.contents ul > li a {
+	color: #cc0000;
+	font-style: italic;
+}
+div.footer{
+	
+	position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+	background-color: black;
+	/* height: 50px; */
+	padding: 10px;
+	color: grey;
+}
+div.footer{
+/* 	flex-shrink: 0; */
 }
 
 a {
