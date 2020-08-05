@@ -15,38 +15,41 @@ let engine = {
 		"https://github.com/sjewitt/doom_snippets/blob/master/screenshots/Screenshot%20from%202020-06-14%2017-01-05.png?raw=true"
 	],
 	
+	imagebase : 'https://github.com/sjewitt/doom_snippets/blob/master/screenshots/',
+	suffix : '?raw=true',
+	mapScreenshots : {
+		breachContainment : [
+			
+			
+		],
+		breachScars :[
+			'breach_scars_2020-04-29 10-08-53.png',
+			'breach_scars_2020-04-29 10-08-59.png',
+			'breach_scars_2020-05-11 10-59-14.png',
+			'breach_scars_2020-05-11 11-00-17.png',
+			'breach_scars_20200523_223655.png'
+		],
+		
+		theGate : [
+			
+			
+		]
+	},
+	
 	/**
 	start stuff
 	*/
 	init : function(){
-		console.log('starting global functions');
 		let page = $('body').attr('data-page');
 		switch(page){
 			case "home":
-			console.log('homepage');
-				let _index = this.splashImageIndex();
-				console.log(this.splashscreen);
-				console.log(_index);
-				/**
-				run splash routine to build this:
-				<a href=".." title="Click to view fullsize image" target="_blank">
-					<img src=".." alt="Doom maps" />
-				</a>
-				 */
-				let _img = document.createElement("img");
-				_img.setAttribute('src',this.splashscreen[this.splashImageIndex()]);
-				_img.setAttribute('alt','Random Doom map image');
-				let _a = document.createElement("a");
-				_a.setAttribute('href',this.splashscreen[this.splashImageIndex()]);
-				_a.setAttribute('title','Click to view fullsize image');
-				_a.setAttribute('target','_blank');
-				_a.appendChild(_img);
-				console.log(_a);				
-				/**
-				empty the target element:
-				 */
-				$('#splash').empty().append(_a);
+				$('#splash').empty().append(this.getImageDOM(this.splashscreen[this.splashImageIndex()]));
 			
+			break;
+			case "maps":
+				this.appendMapScreenshotHandlers();
+				
+				this.buildScreenshotImages();
 			break;
 		}
 	},
@@ -56,6 +59,45 @@ let engine = {
 	splashImageIndex : function(){
 		return Math.floor(Math.random() * Math.floor(this.splashscreen.length));
 	},
+	
+	/**
+	Build simple DOM for image
+	 */
+	getImageDOM : function(imgUrl){
+		let _img = document.createElement("img");
+		_img.setAttribute('src',imgUrl);
+		_img.setAttribute('alt','Random Doom map image');
+		let _a = document.createElement("a");
+		_a.setAttribute('href',imgUrl);
+		_a.setAttribute('title','Click to view fullsize image');
+		_a.setAttribute('target','_blank');
+		_a.appendChild(_img);
+		return(_a);
+	},
+	
+	/**
+	append click handlers to all screenshot togglers:
+	 */
+	appendMapScreenshotHandlers : function(){
+		$("h4.screenshots").each(function(){
+			$(this).off('click').click(function(){
+				if($(this).next().css('display') === 'none'){
+					$(this).next().css({'display':'block'});
+				}
+				else{
+					$(this).next().css({'display':'none'});
+				}
+			});
+		});
+	},
+	
+	buildScreenshotImages : function(){
+		for( prop in this.mapScreenshots){
+			console.log(this.mapScreenshots[prop]);
+			/* iterate over each sub-array, and append each to the corresponding DOM ID element, Remove first... */
+			}
+		}
+	}
 	
 }
 

@@ -23,6 +23,8 @@ body {
       to left, 
       red,black,black,black, red
     );
+    
+    padding-bottom: 80px;
 }
 
 h1 {
@@ -44,6 +46,19 @@ h3 {
 	margin-top: 30px;
 	text-decoration: underline;
 }
+h4{
+	color: #c0c0c0;
+	font-size: 0.9em;
+	margin-top: 30px;
+/* 	text-decoration: underline; */
+}
+
+h4.screenshots:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
 p {
 /* 	width: 600px; */
 /* 	margin-left:50px; */
@@ -78,6 +93,15 @@ div.contents ul > li a {
 	color: #cc0000;
 	font-style: italic;
 }
+div.contents > div.pure-u-3-5{
+	padding-bottom: 80px;
+}
+
+
+div.screenshots{
+	display: none;
+}
+
 div.footer{
 	
 	position: fixed; 
@@ -94,7 +118,7 @@ div.footer{
 /* 	flex-shrink: 0; */
 }
 
-a {
+a, div.screenshots {
 	color: white;
 	text-decoration: none;
 }
