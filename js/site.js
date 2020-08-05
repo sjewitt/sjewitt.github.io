@@ -95,7 +95,7 @@ let engine = {
 		for( prop in this.mapScreenshots){
 			console.log(this.mapScreenshots[prop]);
 			/* iterate over each sub-array, and append each to the corresponding DOM ID element, Remove first... */
-			}
+			//}
 		}
 	}
 	
