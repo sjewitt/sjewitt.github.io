@@ -33,11 +33,21 @@ p {
 /* 	width: 600px; */
 /* 	margin-left:50px; */
 }
+li > a:hover{
+	color: white;
+}
+li > span{
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 .thumbs p{
 	width: 600px;
 }
-img {
-	border: 1px solid #BB2B87;
+div.contents img {
+	border: 1px solid black;
+	width: 100%;
 }
 a {
 	color: white;
