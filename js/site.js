@@ -82,6 +82,14 @@ let engine = {
 			'thegate2020-06-13 13-53-27.png',
 			'thegate2020-06-01 10-56-44.png',
 			'thegate2020-06-13 13-53-59.png'
+		],
+		
+		'belials_ruin':[
+			'Screenshot_Doom_20200806_172609.png',
+			'Screenshot_Doom_20200806_172625.png',
+			'Screenshot_Doom_20200806_172729.png',
+			'Screenshot_Doom_20200806_172845.png',
+			'Screenshot_Doom_20200806_172945.png'
 		]
 	},
 	
@@ -139,10 +147,9 @@ let engine = {
 			$('#'+prop).empty();
 			for(let a=0;a<this.mapScreenshots[prop].length;a++){
 				/* Now pass each image to the builder method: */
-				console.log(this.mapScreenshots[prop][a],prop);
+				//console.log(this.mapScreenshots[prop][a],prop);
 				$('#'+prop).append(this.getImageDOM(this.mapScreenshots[prop][a],prop));
 			}
-
 		}
 	},
 	
