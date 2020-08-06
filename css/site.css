@@ -93,6 +93,13 @@ div.contents ul > li a {
 	color: #cc0000;
 	font-style: italic;
 }
+
+/* body links */
+div.contents  p > a {
+	color: #cc0000;
+	font-style: italic;
+}
+
 div.contents > div.pure-u-3-5{
 	border-top: 1px solid grey;
 	/* padding-bottom: 80px; */
