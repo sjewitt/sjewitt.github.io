@@ -2,14 +2,27 @@
 
 #display{
 	display: inline-block;
-    border: 1px solid black;
     height: 900px;
     min-height: 900px;
     width: 700px;
     max-width: 700px;
     vertical-align: top;
 }
+#display > div{
+	height: 210px;
+}
 #imagemap-container{
-    display: inline-block;
-    border: 1px solid red;	
+    display: inline-block;	
+}
+
+.italic{
+	font-style: italic;
+}
+
+#sector_title_description{
+	padding-bottom: 5px;
+}
+
+#rating{
+	height: 30px;
 }
