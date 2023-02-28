@@ -173,6 +173,8 @@ let engine = {
 	},
 
 	test_in : function(){
+		let self = document.getElementById(this.getAttribute('id'))
+		console.log(self)
 		let sector_rating = -1;
 	    let lookup = JSON.parse(this.getAttribute('data-lookup')); // expects a string of '[n,n,n]' where n is integer
 	    
@@ -216,6 +218,14 @@ let engine = {
 		document.getElementById('sector_title_description').innerText = sector_title_description;
 		document.getElementById('sector_block_description').innerText = sector_block_description;
 		document.getElementById('rating').innerText = output_rating;
+		let elem_title = [];
+		if(quad_title) elem_title.push(quad_title);
+		if(quad_description) elem_title.push(quad_description);
+		if(sector_title) elem_title.push(sector_title);
+		if(sector_title_description) elem_title.push(sector_title_description);
+		if(sector_block_description) elem_title.push(sector_block_description);
+		
+		self.setAttribute('title',elem_title.join('\n\n'))
 	},
 	
 	test_out : function(){

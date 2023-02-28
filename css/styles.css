@@ -1,19 +1,20 @@
 
 
 #display{
-	display: inline-block;
-    height: 900px;
-    min-height: 900px;
-    width: 700px;
-    max-width: 700px;
+/* 	display: inline-block; */
+/*     height: 900px; */
+/*     min-height: 900px; */
+/*     width: 700px; */
+/*     max-width: 700px; */
+	display: none;
     vertical-align: top;
 }
-#display > div{
-	height: 210px;
-}
-#imagemap-container{
-    display: inline-block;	
-}
+/* #display > div{ */
+/* 	height: 210px; */
+/* } */
+/* #imagemap-container{ */
+/*     display: inline-block;	 */
+/* } */
 
 .italic{
 	font-style: italic;
