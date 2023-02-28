@@ -27,15 +27,51 @@ let engine = {
 		'q3':{'title':'Capability building', 'description':'Providing clients with the tools they need to achieve their goals.'},
 		'q4':{'title':'Transforming organizations', 'description':'What skills do you have that can support our clients in their ambitions to change their business?'}
 	},
-	
+
+/**
+COMPLETELY UNFAMILIAR
+Little to no understanding of the topic and no experience. 
+
+NOVICE
+You are open to learning as much as you can about the skill, from all internal and external sources. You share your learning with your peers, who may not be so inquisitive or up-to-date given their more established views and expertise.
+
+Client role comparison (you should be able to comfortably guide and challenge) - graduates, junior
+
+FOUNDATION
+You are aware of the regularly used skills and have observed them in action. You have a technical understanding of key elements but not a great deal of experience. You can be relied upon to receive a brief, and contribute to its delivery.
+
+Client role comparison (you should be able to comfortably guide and challenge) -  executive
+
+
+COMPETENT
+You are adept at the key, common skills - ones that are well known and regularly used at Magnetic (and other organisations). You can be relied upon to receive a brief, respond to and shape it, and then deliver.
+
+Client role comparison (you should be able to comfortably guide and challenge) -  senior executive
+
+ADVANCED
+You are adept at a broad range range of skills, knowing what's possible and available and appropriate for any given situation. You are able to coach and train others in those skills and approaches. You are able to write briefs for your team to execute. You are able to develop unique positions and approaches for Magnetic.
+
+Client role comparison (you should be able to comfortably guide and challenge) - head of...
+
+MASTER
+You are seen as the best in your craft on an industry-wide stage and are a thought-leader publicly. You are able to identify when new skills or methods need to be introduced and developed based on the task or customer need. You are comfortable sitting in C-Suite situations and explain, challenge and recruit in this craft.
+
+Client role comparison (you should be able to comfortably guide and challenge) - C-suite, Director
+
+
+
+ */
+
+
+
 	rating_description_lookup : [
-		'unrated',
-		'noob',
-		'getting to grips',
-		'competent',
-		'pretty good',
-		'excellent',
-		'ninja'
+		{'title':'unrated','description':'n/a'},
+		{'title':'Competely unfamiliar','description':'Little to no understanding of the topic and no experience.'},
+		{'title':'Novice','description':'You are open to learning as much as you can about the skill, from all internal and external sources. You share your learning with your peers, who may not be so inquisitive or up-to-date given their more established views and expertise.\n\nClient role comparison (you should be able to comfortably guide and challenge) - graduates, junior'},
+		{'title':'Foundation','description':'You are aware of the regularly used skills and have observed them in action. You have a technical understanding of key elements but not a great deal of experience. You can be relied upon to receive a brief, and contribute to its delivery.\n\nClient role comparison (you should be able to comfortably guide and challenge) -  executive'},
+		{'title':'Competent','description':'You are adept at the key, common skills - ones that are well known and regularly used at Magnetic (and other organisations). You can be relied upon to receive a brief, respond to and shape it, and then deliver.\n\nClient role comparison (you should be able to comfortably guide and challenge) -  senior executive'},
+		{'title':'Advanced','description':'You are adept at a broad range range of skills, knowing what\'s possible and available and appropriate for any given situation. You are able to coach and train others in those skills and approaches. You are able to write briefs for your team to execute. You are able to develop unique positions and approaches for Magnetic.\n\nClient role comparison (you should be able to comfortably guide and challenge) - head of...'},
+		{'title':'Master','description':'You are seen as the best in your craft on an industry-wide stage and are a thought-leader publicly. You are able to identify when new skills or methods need to be introduced and developed based on the task or customer need. You are comfortable sitting in C-Suite situations and explain, challenge and recruit in this craft.\n\nClient role comparison (you should be able to comfortably guide and challenge) - C-suite, Director'}
 	],
 	
 	/** quadrant description and title */
@@ -209,7 +245,7 @@ let engine = {
 
 		let output_rating = '';
 		if(sector_rating > -1){
-			output_rating = engine.rating_description_lookup[sector_rating];
+			output_rating = engine.rating_description_lookup[sector_rating].title;
 		}
 
 		document.getElementById('quad_title').innerText = quad_title;
@@ -219,11 +255,12 @@ let engine = {
 		document.getElementById('sector_block_description').innerText = sector_block_description;
 		document.getElementById('rating').innerText = output_rating;
 		let elem_title = [];
-		if(quad_title) elem_title.push(quad_title);
-		if(quad_description) elem_title.push(quad_description);
-		if(sector_title) elem_title.push(sector_title);
-		if(sector_title_description) elem_title.push(sector_title_description);
-		if(sector_block_description) elem_title.push(sector_block_description);
+		console.log(lookup)
+		if(quad_title && lookup[2] === -1) elem_title.push(quad_title);
+		if(quad_description && lookup[2] === -1) elem_title.push(quad_description);
+		if(sector_title && lookup[2] === -1) elem_title.push(sector_title);
+		if(sector_title_description  && lookup[2] !== -1) elem_title.push(sector_title_description);
+		if(sector_block_description && lookup[2] !== -1) elem_title.push(sector_block_description);
 		
 		self.setAttribute('title',elem_title.join('\n\n'))
 	},
@@ -262,12 +299,14 @@ let engine = {
 			console.log('segment block data:',engine.current_data[a].key[2])
 			console.log('rating:',engine.current_data[a].rating)
 			let row = document.createElement('div');
+			/** do as better DOM elements! */
 			row.appendChild(document.createTextNode(
 				engine.data_0[engine.current_data[a].key[0]].title
 				+', '
 				+engine.data_1[engine.current_data[a].key[0]][engine.current_data[a].key[1]].title
 				+': '
-				+engine.rating_description_lookup[engine.current_data[a].rating]
+				+engine.rating_description_lookup[engine.current_data[a].rating].title
+				+ ' (' + engine.rating_description_lookup[engine.current_data[a].rating].description + ')'
 			))
 			console.log(engine.data_0[engine.current_data[a].key[0]])
 			target.appendChild(row);
